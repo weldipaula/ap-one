@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApOne - Seu primeiro Apartamento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  
+  <header>
+    <div class="header-full">
+      <div class="header-full-bg">
+        <img src="/assets/bg.jpg" alt="" class="header-full-image" >        
+        <div class="header-nav">
+          
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: none;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/assets/logo.png" width="40px" class="logo">
+                <span>ApOne</span> 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">APARTAMENTOS</a>
+                  </li>              
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      SERVIÇOS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">SEGURO</a></li>
+                      <li><a class="dropdown-item" href="#">LIMPEZA</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">SOBRE</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search">
+                  <button class="btn btn-link" type="submit">Busca</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+  
+        </div>
+        <div class="header-slider">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active indicators" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="indicators" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="indicators" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/assets/slider1.png" class="d-md-block slider-img" alt="">
+                <div class="">
+                  <h4>NÓS ENCONTRAMOS A SUA</h4>     
+                  <span class="carousel-item-span">CASA DOS</span> 
+                  <span class="carousel-item-span span-high">SONHOS</span>
+                  <p>São centenas de opções para sua nova casa</p>
+                  <a href="#" class="btn-link">
+                    SAIBA MAIS
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="/assets/slider2.png" class="d-md-block slider-img" alt="">
+                <div class="">
+                  <h4>AMBIENTE CRIATIVO E INOVADOR</h4>     
+                  <span class="carousel-item-span">FAÇA MAIS </span> 
+                  <span class="carousel-item-span span-high">AMIZADES</span>
+                  <p>Condomínios que contam com areas de Coworking</p>
+                  <a href="#" class="btn-link">
+                    SAIBA MAIS
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="/assets/slider3.png" class="d-md-block slider-img" alt="">
+                <div class="">
+                  <h4>TRANQUILIDADE PARA ENTRAR E SAIR</h4>     
+                  <span class="carousel-item-span">COM MUITA</span> 
+                  <span class="carousel-item-span span-high">SEGURANÇA</span>
+                  <p>Pessoal treinado e monitoramento por câmeras</p>
+                  <a href="#" class="btn-link">
+                    SAIBA MAIS
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev control-prev-arrow" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next control-next-arrow" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="header-info">
+          <div class="info-statistic">
+            <div class="statistic-container">
+              <div class="statistic">
+                <img src="/assets/logo.png" alt="">
+                <span>100 APARTAMENTOS</span>
+              </div>
+              <div class="statistic">
+                <img src="/assets/logo.png" alt="">
+                <span>100 CLIENTES</span>
+              </div>
+              <div class="statistic">
+                <img src="/assets/logo.png" alt="">
+                <span>100 CONTRATOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main></main>
+
+  <footer></footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</html>

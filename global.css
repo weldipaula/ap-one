@@ -1,0 +1,21 @@
+:root {
+  --background: #f0f2f5;
+  --gray: #797979;
+  --orange-dark: #f19d00;
+  --orange-opacity: #f19d00b6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Poppins', sans-serif;
+}
