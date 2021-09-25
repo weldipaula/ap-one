@@ -1,0 +1,56 @@
+/*seçao de serviços*/
+.services {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.services-text-container .title,
+.services-text-container .title-color {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.services-text-container .title-color {
+  color: var(--orange-dark);
+}
+
+.services-text-container p {
+  margin: .6rem 0 2rem 0;
+}
+
+/*cards de serviço*/
+.services-cards-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card-bg img{
+  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 50% 85%, 0 100%, 0 0);
+  border-radius: .5rem .5rem 0 0;
+}
+
+.cards {
+  box-shadow: 1px 1px 10px black;
+  width: 30%;
+  border-radius: .5rem;
+}
+
+.card-text {
+  padding-bottom: 2rem;
+}
+
+.card-text p {
+  font-weight: 700;
+  margin-bottom: 0
+
+}
+
+.card-text span {
+  padding: .8rem .3rem 2rem .3rem;
+  display: block;
+}
