@@ -6,13 +6,13 @@ let max = images.length
 
 window.addEventListener('scroll',(event) => {
   let btn = document.getElementById('btn-sticky')
+  let header = document.querySelector('#header-sticky')
+
   if (document.documentElement.scrollTop < 20) {
-    let header = document.querySelector('#header-sticky')
     header.classList.remove('sticky')
     header.classList.add('no-sticky')
     btn.classList.add('btn-color')
   }  if (document.documentElement.scrollTop > 20) {
-    let header = document.querySelector('#header-sticky')
     header.classList.add('sticky')
     header.classList.remove('no-sticky')
     btn.classList.remove('btn-color')
