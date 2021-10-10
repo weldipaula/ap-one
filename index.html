@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="/styles/global.css">
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="stylesheet" href="/styles/form.css">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
   
@@ -182,7 +184,7 @@
           </div>
         </div>
       </div>
-      <div class="products-text-container services-text-container">
+      <div class="services-text-container products-text-container">
         <span class="title">CONFIRA MAIS</span>
         <span class="title-color">OPORTUNIDADES</span>
         <p>Imóveis de qualidade em ambientes incríveis</p>   
@@ -294,10 +296,10 @@
           <div class="dots"></div>
         </div>
       </div>
-      <div class="products-text-container more-info-text-container">
-        <span class="title">CONFIRA MAIS</span>
-        <span class="title-color">OPORTUNIDADES</span>
-        <p>Imóveis de qualidade em ambientes incríveis</p>   
+      <div class="more-info-text-container products-text-container">
+        <span class="title">NOSSO</span>
+        <span class="title-color">ENDEREÇO</span>
+        <p>Estrutura e profissionais que vão te surpreender</p>   
       </div>
       <div class="container-more-info">
         <div class="more-info">
@@ -331,10 +333,69 @@
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230483.17971806813!2d-49.42988601481613!3d-25.49505006337666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1633691439027!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
+      <div class="leads-text-container products-text-container">
+        <span class="title">RECEBA NOSSAS </span>
+        <span class="title-color">OFERTAS</span>
+        <p>Cadastre-se para receber ofertas primeiro</p>   
+      </div>
+      <div class="leads-container">
+        <div class="leads">
+          <div class="form-leads">
+            <form action="" id="form">
+              <div class="form-name input-position">
+                <label for="name">Nome:</label>
+                <input type="text" id=name class="input-full" placeholder="Digite seu nome" required>
+              </div>
+              <div class="form-contacts">
+                <div class="contacts-email input-position">
+                  <label for="email">E-mail:</label>
+                  <input type="email" class="input-full" id=email placeholder="seuemail@email.com" required>
+                </div>
+                <div class="contacts-phone input-position">
+                  <label for="phone">Telefone:</label>
+                  <input type="tel" class="input-full" id=phone placeholder="(DDD) 99999 9999">
+                </div>
+              </div>
+              <div class="form-msg input-position">
+                <label for="msg">Mensagem:</label>
+                <textarea class="input-full" name="msg" id="msg" rows="4" placeholder="Digite aqui sua mensagem"></textarea>
+              </div>
+              <div class="form-btn">
+                <div class="btn-authorization">
+                  <input type="checkbox" id="authorization" name="authorization" checked>
+                  <label for="authorization">Autorizo a utilização dos dados para contatos futuros.</label>
+                </div>
+                <div class="btn">
+                  <button id="btn-form" class="btn-link btn-color">CADASTRAR</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer></footer>
+  <footer>
+    <div class="footer-full">
+      <div class="container-footer">
+        <a href="https://api.whatsapp.com/send?phone=SeuNúmero" target="_blank">
+          <img id="social-fixed" class="social-fixed" src="/assets/footer/whatsapp.png" alt="">
+        </a>
+        <div class="container-social">
+          <div class="social-title">
+            <p>NOSSAS REDES</p>
+          </div>
+          <div class="social">
+            <img src="/assets/footer/facebook.svg" alt="facebook" loading="lazy" >
+            <img src="/assets/footer/instagram.svg" alt="instagran" loading="lazy">
+            <img src="/assets/footer/linkedin.svg" alt="linkedIn" loading="lazy">
+            <img src="/assets/footer/twitter.svg" alt="twitter" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 <script src="/script.js"></script>

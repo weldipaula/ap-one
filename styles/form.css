@@ -1,0 +1,104 @@
+.leads-text-container {
+  margin-bottom: 0;
+}
+.leads-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.leads {
+  width: 85%;
+  background: #fff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form-leads {
+  width: 80%;
+  margin: 2rem 0;
+}
+
+.form-leads input:focus, 
+.form-leads textarea {
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.form-name {
+  width: 100%;
+}
+
+.input-position {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-full {
+  width: 100%;
+  border: 1px solid var(--gray);
+  margin: 1rem 0 2rem 0;
+  height: 3rem;
+  padding: .5rem 1rem .5rem 1rem;
+  border-radius: .5rem;
+  transition: .2s;
+}
+
+.form-contacts,
+.form-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contacts-email, 
+.contacts-phone {
+  width: 49%;
+}
+
+.form-msg textarea{
+  border: 1px solid var(--gray);
+  border-radius: .5rem;
+  height: 6rem;
+  transition: .2s;
+}
+
+.input-full:hover,
+.form-msg textarea:hover {
+  border: 1px solid var(--orange-dark);
+  transition: .2s;
+}
+
+.form-msg #msg::placeholder {
+  border: none;
+}
+
+.btn-authorization {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+.btn-authorization label {
+  padding: 0 .5rem;
+}
+
+/* textos do formulario */
+
+.leads-container ::placeholder{
+  color: var(--gray);
+}
+
+.leads-container label {
+  font-weight: 700;
+}
+
+
