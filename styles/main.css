@@ -29,15 +29,23 @@
   justify-content: space-evenly;
   margin-bottom: 2rem;
 }
+.card-bg {
+  height: 50%;
+  object-fit: contain;
+}
 
 .card-bg img{
   clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 50% 85%, 0 100%, 0 0);
   border-radius: .5rem .5rem 0 0;
+  height: 100%;
 }
 
 .cards {
+  display: block;
+  flex-direction: column;
   box-shadow: 1px 1px 10px black;
   width: 30%;
+  min-height: 50vh;
   border-radius: .5rem;
   transition: .2s;
 }
@@ -49,6 +57,8 @@
 
 .card-text {
   padding-bottom: 2rem;
+  height: 50%;
+
 }
 
 .card-text p {
@@ -70,12 +80,12 @@
 }
 
 .products-text-container {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .products-container {
   width: 100%;
-  height: 40vh;
+  min-height: 50vh;
   display: flex;
   position: relative;
   justify-content: center;
@@ -93,6 +103,11 @@
   box-shadow: 1px 1px 10px black;
 }
 
+.product-img {
+  width: 45%;
+  object-fit: cover;
+}
+
 .product-container.selected {
   opacity: 1;
   transition: .2s;
@@ -100,12 +115,12 @@
 }
 
 .product-container .product-bg {
-  width: 50%;
-  height: 40vh;
+  width: 100%;
+  height: 100%;
   border-radius: .5rem 0 0 .5rem;
 }
 .product-description{
-  width: 60%;
+  width: 55%;
 }
 .description-icons-container,
 .description-price{
@@ -161,9 +176,14 @@
 }
 
 /* more-infos */
+.more-info-text-container {
+
+}
+
 .container-more-info {
+  margin: 1.5rem 0;
   width: 85%;
-  height: 30rem;
+  height: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,20 +242,22 @@
     width: 85%;
     margin: 0;
   }
-
-  .product-container .product-bg  {
-    width: 40%;
-    height: 30vh;
-  }
   
   .products-container {
-    height: 30vh;
-    width: 100%;
+    min-height: 43rem;
   }
 
   .product-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-img {
     width: 100%;
-
+    height: 350px;
+  }
+  .product-description {
+    width: 100%;
+    padding-bottom: .5rem;
   }
 
   .container-more-info {
@@ -257,10 +279,25 @@
 
    .cards {
     width: 70%;
-    margin-bottom: .7rem;
+    margin-bottom: 1rem;
   }
 
   .products-container {
-    height: 47vh;
+    min-height: 80vh;
+  }
+
+  .product-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-img {
+    width: 100%;
+  }
+  .product-description {
+    width: 100%;
+  }
+
+  .container-more-info {
+    height: 80vh;
   }
 }

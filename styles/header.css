@@ -15,6 +15,7 @@
 }
 #navbarDropdown{
   color: #000;
+  outline: none;
 }
 
 .no-sticky {

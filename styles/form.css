@@ -39,7 +39,7 @@
 .input-full {
   width: 100%;
   border: 1px solid var(--gray);
-  margin: 1rem 0 2rem 0;
+  margin: .5rem 0 1rem 0;
   height: 3rem;
   padding: .5rem 1rem .5rem 1rem;
   border-radius: .5rem;
@@ -99,6 +99,20 @@ input[type=checkbox] {
 
 .leads-container label {
   font-weight: 700;
+}
+
+/* loader */
+.loader-thanks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  border-radius: .5rem;
+  height: 3rem;
+}
+.loader-thanks .title {
+  color: #fff;
+  margin-right: .5rem;
 }
 
 
