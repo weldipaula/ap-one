@@ -54,3 +54,13 @@
   box-shadow: 1px 1px 30px var(--background); 
   transition: .3s;
 }
+
+@media (max-width: 850px) { 
+  .container-social{
+    width: 80%;
+  }
+
+  .social {
+    width: 100%;
+  }
+}
