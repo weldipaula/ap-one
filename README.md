@@ -13,7 +13,22 @@ Também foi inserido um contexto de ambientes que visam a integração profissio
 No fim há um campo de cadastro de leads, este salva o cadastro no localStorage.
 
 ## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
+
+<p align="center">
+  <img width="600" src="https://github.com/weldipaula/ap-one/blob/master/assets/reader/layout01.png">
+</p>
+
+## Demo
+
+<p align="center">
+  <img src="https://github.com/weldipaula/ap-one/blob/master/assets/reader/demo-apOne.gif">
+</p>
+
+## LocalStorage
+
+<p align="center">
+  <img width="600" src="https://github.com/weldipaula/ap-one/blob/master/assets/reader/storage-apOne.png">
+</p>
 
 # Tecnologias utilizadas
 
@@ -31,7 +46,4 @@ git clone
 
 # Autor
 
-Wellyngton de Paula Santos
-
-https://www.linkedin.com/in/
-
+ [![Linkedin Badge](https://img.shields.io/badge/-Wellyngton_de_Paula-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/wellyngton-de-paula/)](https://www.linkedin.com/in/wellyngton-de-paula/) 
