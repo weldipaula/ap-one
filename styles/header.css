@@ -4,38 +4,38 @@
   border-radius: 50%;
 }
 
-#header-sticky {
-  max-width: 1120px;
+.sticky {
+  max-width: 1300px;
 }
 
 .navbar {
   padding-top: 0;
 }
 
-.nav-link{
-  transition: .3s;
+.nav-link {
+  transition: 0.3s;
   opacity: 1;
 }
-.nav-link:hover{
+.nav-link:hover {
   background: var(--orange-opacity);
-  border-radius: .5rem;
-  transition: .3s;
+  border-radius: 0.5rem;
+  transition: 0.3s;
 }
-#navbarDropdown{
+#navbarDropdown {
   color: #000;
   outline: none;
 }
 
 .no-sticky {
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   background: none;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .sticky {
   background-color: var(--orange-dark);
   padding: 1rem;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-sticky {
@@ -51,20 +51,25 @@
 
 /*background do header*/
 .header-full {
-  position: relative;
   font-weight: 600;
+  width: 100%;
+}
+.header-full-bg {
+  width: 100%;
+  height: 350px;
+  position: relative;
 }
 
-.header-full-image{
-  opacity: .5;
+.header-full-image {
+  opacity: 0.5;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: auto;
   object-fit: cover;
+  bottom: 0;
 }
 
 .slider-img {
-  height: 50vh;
+  max-height: 40vh;
 }
 
 /*barra de busca*/
@@ -76,10 +81,10 @@
 .header-info {
   display: flex;
   justify-content: center;
-  background: var(--orange-opacity) ;
-  position: relative;
+  background: var(--orange-opacity);
+  position: absolute;
+  bottom: 0;
   width: 100%;
-
 }
 
 .info-statistic {
@@ -88,6 +93,7 @@
   height: 5rem;
   display: flex;
   border-radius: 50px 0 50px 0;
+  transition: 0.5s all;
 }
 
 .statistic-container {
@@ -105,7 +111,7 @@
 }
 
 .statistic span {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .statistic img {
@@ -113,9 +119,39 @@
 }
 
 /*carrosel do header*/
-.carousel-item.active{
+.header-slider {
+  width: 100%;
+  height: 350px;
+}
+.carousel-item {
+  width: 100vw;
+}
+.active,
+.carousel-item {
+  animation: fade 1s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.carousel-item img {
+  order: 2;
+  width: 300px;
+  margin-left: -100px;
+}
+.item-description {
+  order: 1;
+  width: 50%;
+  height: 350px;
+  padding: 5rem 0 0 5rem;
+}
+.carousel-item.active {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 7rem;
@@ -125,10 +161,11 @@
   font-weight: 700;
 }
 
-.carousel-item span {
+.carousel-item-span {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 2rem;
+  display: inline;
 }
 
 .carousel-item p {
@@ -140,10 +177,10 @@
 }
 
 .btn-link {
-  padding: .8rem 2.5rem;
+  padding: 0.8rem 2.5rem;
   text-decoration: none;
-  border-radius: .5rem;
-  transition: .2s;
+  border-radius: 0.5rem;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -160,6 +197,7 @@
 
 .carousel-indicators {
   justify-content: center;
+  display: none;
 }
 
 .carousel-indicators .indicators {
@@ -170,12 +208,12 @@
   background-color: var(--orange-dark);
 }
 
-.control-prev-arrow{
+.control-prev-arrow {
   background: url(/assets/left-arrow.png) no-repeat center;
   background-size: 3rem;
 }
 
-.control-next-arrow{
+.control-next-arrow {
   background: url(/assets/next-arrow.png) no-repeat center;
   background-size: 3rem;
 }
@@ -183,27 +221,49 @@
 /* responsividade */
 
 @media (max-width: 850px) {
+  .info-statistic {
+    width: 70%;
+    transition: 0.5s all;
+  }
+  .slider-img {
+    max-height: 25vh;
+    margin-right: 3rem;
+  }
+  .item-description {
+    width: 100%;
+    padding: 2rem 0 2rem 4rem;
+  }
   .carousel-item img {
     width: 30%;
     height: 30vh;
   }
 
-  .carousel-item.active{
+  .carousel-item.active {
     padding-top: 3rem;
     gap: 0;
     font-size: 75%;
   }
   .navbar-collapse {
     background: rgba(255, 255, 255, 0.781);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     padding: 1rem 1rem 1rem 1rem;
-    transition: .3s;
+    transition: 0.3s;
   }
-  
 }
 @media (max-width: 420px) {
+  .header-slider img {
+    display: none;
+  }
+  .item-description {
+    width: 100%;
+    padding: 2rem;
+  }
+  .info-statistic {
+    width: 80%;
+    transition: 0.5s all;
+  }
   .carousel-item {
-   padding-left: 1rem; 
+    padding-left: 1rem;
   }
   .carousel-item span {
     font-size: 1.5rem;
@@ -220,8 +280,8 @@
   }
   .navbar-collapse {
     background: rgba(255, 255, 255, 0.781);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     padding: 1rem 1rem 1rem 1rem;
-    transition: .3s;
+    transition: 0.3s;
   }
 }

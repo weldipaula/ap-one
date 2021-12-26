@@ -18,7 +18,7 @@
 }
 
 .services-text-container p {
-  margin: .6rem 0 2rem 0;
+  margin: 0.6rem 0 2rem 0;
 }
 
 /*cards de serviço*/
@@ -34,9 +34,9 @@
   object-fit: contain;
 }
 
-.card-bg img{
+.card-bg img {
   clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 50% 85%, 0 100%, 0 0);
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
   height: 100%;
 }
 
@@ -46,13 +46,13 @@
   box-shadow: 1px 1px 10px black;
   width: 30%;
   min-height: 40vh;
-  border-radius: .5rem;
-  transition: .2s;
+  border-radius: 0.5rem;
+  transition: 0.2s;
 }
 
 .cards:hover {
-  transform: translateY(-.5rem);
-  transition: .2s;
+  transform: translateY(-0.5rem);
+  transition: 0.2s;
 }
 
 .card-text {
@@ -63,12 +63,11 @@
 
 .card-text p {
   font-weight: 700;
-  margin-bottom: 0
-
+  margin-bottom: 0;
 }
 
 .card-text span {
-  padding: .8rem .3rem 2rem .3rem;
+  padding: 0.8rem 0.3rem 2rem 0.3rem;
   display: block;
 }
 
@@ -99,15 +98,15 @@
   display: flex;
   position: relative;
   justify-content: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   box-shadow: 1px 1px 10px black;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .product-container {
   display: inline-flex;
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   position: absolute;
   opacity: 0;
   transition: opacity 1s;
@@ -122,20 +121,20 @@
 
 .product-container.selected {
   opacity: 1;
-  transition: .2s;
+  transition: 0.2s;
   transition: opacity 1s;
 }
 
 .product-container .product-bg {
   width: 100%;
   height: 100%;
-  border-radius: .5rem 0 0 .5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
-.product-description{
+.product-description {
   width: 55%;
 }
 .description-icons-container,
-.description-price{
+.description-price {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
@@ -158,15 +157,15 @@
   align-items: center;
 }
 .description-icons img {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .description-price {
   justify-content: space-evenly;
 }
 
-.description-price .btn-link{
-  display: flex;  
+.description-price .btn-link {
+  display: flex;
   align-items: center;
 }
 
@@ -184,17 +183,16 @@
   position: relative;
 }
 
-.dots{
+.dots {
   width: 1rem;
   height: 1rem;
   background-color: var(--orange-dark);
   border-radius: 50%;
-  margin-right: 1rem; 
+  margin-right: 1rem;
 }
 
 /* more-infos */
 .more-info-text-container {
-  
 }
 
 .container-more-info {
@@ -205,7 +203,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 1px 1px 10px black;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .more-info {
@@ -222,7 +220,7 @@
 .map {
   width: 100%;
   height: 100%;
-  border-radius: 0 .5rem .5rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .info-title {
@@ -230,7 +228,7 @@
 }
 
 .info-contacts {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
@@ -238,7 +236,7 @@
 
 .info-img {
   width: 2rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .info-contacts p {
@@ -256,18 +254,18 @@
 /* responsividade */
 
 @media (max-width: 850px) {
- /* cards */
+  /* cards */
 
-.card-text .btn-link {
-  bottom: .5rem;
-  width: 70%;
-}
+  .card-text .btn-link {
+    bottom: 0.5rem;
+    width: 70%;
+  }
 
   .container-products {
     width: 85%;
     margin: 0;
   }
-  
+
   .products-container {
     min-height: 40rem;
   }
@@ -282,7 +280,7 @@
   }
   .product-description {
     width: 100%;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   .container-more-info {
@@ -297,7 +295,7 @@
   }
 
   .info {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   .schedule-container {
@@ -305,23 +303,23 @@
   }
 
   .map {
-    border-radius: 0 0 .5rem .5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
   }
 }
 
 @media (max-width: 420px) {
   .services-cards-container {
     flex-direction: column;
-    align-items: center
-   }
+    align-items: center;
+  }
 
-   .cards {
+  .cards {
     width: 70%;
     margin-bottom: 1rem;
   }
 
   .products-container {
-    min-height: 80vh;
+    min-height: 68vh;
   }
 
   .product-container {
@@ -330,6 +328,10 @@
   }
   .product-img {
     width: 100%;
+    height: 100%;
+  }
+  .product-container .product-bg {
+    border-radius: 0.5rem 0.5rem 0 0;
   }
   .product-description {
     width: 100%;
