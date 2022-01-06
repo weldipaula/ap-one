@@ -5,22 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ApOne - Seu primeiro Apartamento</title>
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <!-- locais -->
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/form.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- fontes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -30,7 +47,7 @@
     <header>
       <div class="header-full">
         <div class="header-full-bg">
-          <img src="assets/bg.png" alt="" class="header-full-image" />
+          <img src="assets/bg.jpg" alt="" class="header-full-image" />
           <div class="header-nav">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
               <div id="header-sticky" class="container-fluid">
@@ -223,59 +240,10 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="services">
-        <div class="services-text-container">
-          <span class="title">NOSSOS</span>
-          <span class="title-color">SERVIÇOS</span>
-          <p>Serviços disponibilizados para facilita a sua vida</p>
-        </div>
-        <div class="services-cards-container">
-          <div class="cards">
-            <div class="card-bg">
-              <img src="assets/bg-limpeza.jpg" alt="" width="100%" />
-            </div>
-            <div class="card-text">
-              <p>LIMPEZA E ORGANIZAÇÃO</p>
-              <span
-                >Profissionais dedicados, treinados e preparados para entregar o
-                melhor serviço</span
-              >
-              <a href="" class="btn-link btn-color"> SAIBA + </a>
-            </div>
-          </div>
-          <div class="cards">
-            <div class="card-bg">
-              <img
-                src="assets/bg-seguranca-patrimonial.jpg"
-                alt=""
-                width="100%"
-              />
-            </div>
-            <div class="card-text">
-              <p>SEGURANÇA</p>
-              <span
-                >Pessoal treinado e alinhado com as melhores e mais atuais
-                técnicas e procedimentos</span
-              >
-              <a href="" class="btn-link btn-color"> SAIBA + </a>
-            </div>
-          </div>
-          <div class="cards">
-            <div class="card-bg">
-              <img src="assets/bg-lavanderia.jpg" alt="" width="100%" />
-            </div>
-            <div class="card-text">
-              <p>LAVANDERIA</p>
-              <span
-                >Máquinas de ultima geraçao, com ótima capacidade de lavagem e
-                secagem turbo</span
-              >
-              <a href="" class="btn-link btn-color"> SAIBA + </a>
-            </div>
-          </div>
-        </div>
-        <div class="services-text-container products-text-container">
+        <div class="products-text-container services-text-container">
           <span class="title">CONFIRA MAIS</span>
           <span class="title-color">OPORTUNIDADES</span>
           <p>Imóveis de qualidade em ambientes incríveis</p>
@@ -451,6 +419,59 @@
             <div class="dots"></div>
           </div>
         </div>
+        <div class="services-container">
+          <div class="services-text-container">
+            <span class="title">NOSSOS</span>
+            <span class="title-color">SERVIÇOS</span>
+            <p>Serviços disponibilizados para facilita a sua vida</p>
+          </div>
+          <div class="services-cards-container">
+            <div class="cards">
+              <div class="card-bg">
+                <img src="assets/service-limpeza.jpg" alt="" width="100%" />
+              </div>
+              <div class="card-text">
+                <p>LIMPEZA E ORGANIZAÇÃO</p>
+                <span
+                  >Profissionais dedicados, treinados e preparados para entregar
+                  o melhor serviço</span
+                >
+                <a href="" class="btn-link btn-color"> SAIBA + </a>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card-bg">
+                <img
+                  src="assets/service-seguranca-patrimonial.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+              <div class="card-text">
+                <p>SEGURANÇA</p>
+                <span
+                  >Pessoal treinado e alinhado com as melhores e mais atuais
+                  técnicas e procedimentos</span
+                >
+                <a href="" class="btn-link btn-color"> SAIBA + </a>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card-bg">
+                <img src="assets/service-lavanderia.jpg" alt="" width="100%" />
+              </div>
+              <div class="card-text">
+                <p>LAVANDERIA</p>
+                <span
+                  >Máquinas de ultima geraçao, com ótima capacidade de lavagem e
+                  secagem turbo</span
+                >
+                <a href="" class="btn-link btn-color"> SAIBA + </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="more-info-text-container products-text-container">
           <span class="title">NOSSO</span>
           <span class="title-color">ENDEREÇO</span>
@@ -627,11 +648,17 @@
       </div>
     </footer>
   </body>
+  <!-- locais -->
   <script src="scripts/script.js"></script>
   <script src="scripts/form.js"></script>
+  <!-- bootstrap -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"
   ></script>
+  <!-- slick slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="scripts/slickSlider.js"></script>
 </html>

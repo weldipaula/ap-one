@@ -1,4 +1,13 @@
 /*seçao de serviços*/
+.services-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
 .services {
   margin: 2rem 0;
   display: flex;
@@ -16,14 +25,16 @@
 .title-color {
   color: var(--orange-dark);
 }
-
+.services-text-container {
+  margin: 3rem 0 0 0;
+}
 .services-text-container p {
   margin: 0.6rem 0 2rem 0;
 }
 
 /*cards de serviço*/
 .services-cards-container {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -44,7 +55,7 @@
   display: block;
   flex-direction: column;
   box-shadow: 1px 1px 10px black;
-  width: 30%;
+  width: 20%;
   min-height: 40vh;
   border-radius: 0.5rem;
   transition: 0.2s;
@@ -88,7 +99,7 @@
 }
 
 .products-text-container {
-  margin: 1rem 0;
+  margin: 3rem 0 0 0;
 }
 
 .products-container {
@@ -252,10 +263,24 @@
 }
 
 /* responsividade */
-
+@media (max-width: 1540px) {
+  .cards {
+    width: 25%;
+  }
+}
+@media (max-width: 1220px) {
+  .cards {
+    width: 30%;
+  }
+  .btn-link {
+    padding: 0.8rem 1.8rem;
+  }
+}
 @media (max-width: 850px) {
   /* cards */
-
+  .cards {
+    width: 28%;
+  }
   .card-text .btn-link {
     bottom: 0.5rem;
     width: 70%;
@@ -314,7 +339,7 @@
   }
 
   .cards {
-    width: 70%;
+    width: 90%;
     margin-bottom: 1rem;
   }
 
@@ -326,6 +351,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  .products-container {
+    height: 70vh;
+  }
+
   .product-img {
     width: 100%;
     height: 100%;
@@ -336,8 +366,35 @@
   .product-description {
     width: 100%;
   }
+  .title,
+  .title-color {
+    font-size: 1.5rem;
+  }
 
   .container-more-info {
     height: 80vh;
+  }
+  .services-text-container {
+    margin: 1.5rem 0;
+  }
+
+  .services-container {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 360px) {
+  .products-container {
+    height: 70vh;
+    font-size: 65%;
+  }
+  .title,
+  .title-color {
+    font-size: 1.2rem;
+  }
+  .services-container {
+    margin-top: 2rem;
+  }
+  .services-text-container {
+    margin: 1rem 0;
   }
 }
