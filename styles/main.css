@@ -112,6 +112,7 @@
   margin-bottom: 0.5rem;
   box-shadow: 1px 1px 10px black;
   border-radius: 0.5rem;
+  transition: 0.2s all;
 }
 
 .product-container {
@@ -263,6 +264,18 @@
 }
 
 /* responsividade */
+@media (min-width: 1440px) {
+  .products-container {
+    min-height: 400px;
+    transition: 0.2s all;
+  }
+  .product-img {
+    height: 400px;
+  }
+  .description-title {
+    margin-top: 2rem;
+  }
+}
 @media (max-width: 1540px) {
   .cards {
     width: 25%;
