@@ -252,20 +252,27 @@
     transition: 0.3s;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 750px) {
   .header-slider img {
     display: none;
   }
   .item-description {
     width: 100%;
-    padding: 2rem;
+    height: 220px;
+    padding: 0;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .carousel-item-span {
+    display: contents;
   }
   .info-statistic {
     width: 80%;
     transition: 0.5s all;
-  }
-  .carousel-item {
-    padding-left: 1rem;
   }
   .carousel-item span {
     font-size: 1.5rem;
