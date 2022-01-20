@@ -47,10 +47,10 @@ window.addEventListener('resize', handleHeader)
 function handleHeader() {
   const headerImg = document.querySelector('.header-full-image')
   if (window.innerWidth < 1006) {
-    headerImg.setAttribute('src', 'assets/bg-1000.jpg')
+    headerImg.setAttribute('src', '../assets/bg-1000.jpg')
     console.log(headerImg)
   } else if (window.innerWidth > 1006) {
-    headerImg.setAttribute('src', 'assets/bg.jpg')
+    headerImg.setAttribute('src', '../assets/bg.jpg')
   }
 }
 
