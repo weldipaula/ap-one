@@ -17,11 +17,7 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <!-- slick slider -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <!-- carrosel -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
@@ -30,12 +26,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
+
     <!-- locais -->
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/sobre/style.css" />
+    <link rel="stylesheet" href="../styles/planos/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- fontes -->
     <link
@@ -72,7 +69,10 @@
                 >
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html"
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="../index.html"
                         >HOME</a
                       >
                     </li>
@@ -96,12 +96,15 @@
                         class="dropdown-menu"
                         aria-labelledby="navbarDropdown"
                       >
-                        <li><a class="dropdown-item" href="../planos">SEGURO</a></li>
-                        <li><a class="dropdown-item" href="../planos">LIMPEZA</a></li>
+                        <li><a class="dropdown-item" href="#">SEGURO</a></li>
+                        <li><a class="dropdown-item" href="#">LIMPEZA</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="../sobre"
                         >SOBRE</a
                       >
                     </li>
@@ -242,176 +245,183 @@
     </header>
 
     <main>
-      <section class="container-cases">
-        <div class="title-cases">
-          <h1>
-            Criamos e mantemos <span>sólidas parcerias</span> com clientes como:
-          </h1>
-        </div>
-        <article class="container-logo">
-          <div class="logo">
-            <img
-              src="../assets/sobre/cases_logos/AME.png"
-              alt="Ame"
-              title="Ame"
-            />
-          </div>
-          <div class="logo">
-            <img
-              src="../assets/sobre/cases_logos/LE-LIS-BLACNK.png"
-              alt="Le Lis Blacnk"
-              title="Le Lis Blacnk"
-            />
-          </div>
-          <div class="logo">
-            <img
-              src="../assets/sobre/cases_logos/ANIMA.png"
-              alt="Anima"
-              title="Anima"
-            />
-          </div>
-          <div class="logo">
-            <img
-              src="../assets/sobre/cases_logos/LOGO-MTRIX.svg"
-              alt="Mtrix"
-              title="Mtrix"
-              width="130px"
-            />
-          </div>
-          <div class="logo">
-            <img
-              src="../assets/sobre/cases_logos/ANIMALE.png"
-              alt="Animale"
-              title="Animale"
-            />
-          </div>
-          <div class="logo">
-            <img
-              src="../assets/sobre/cases_logos/CeA.png"
-              alt="C&A"
-              title="C&A"
-            />
-          </div>
-          <div class="logo">
-            <img
-              src="../assets/sobre/cases_logos/CK.png"
-              alt="Calvin Klein"
-              title="Calvin Klein"
-            />
-          </div>
-          <div class="logo">
-            <img
-              src="../assets/sobre/cases_logos/AME.png"
-              alt="Ame"
-              title="Ame"
-            />
-          </div>
-        </article>
-      </section>
-      <section class="container-posts">
-        <div class="posts">
-          <div class="card-title">
-            <img
-              src="../assets/sobre/cases_logos/LE-LIS-BLACNK.png"
-              alt="Le Lis Blanc"
-            />
-            <h1>Brand Experience de impacto</h1>
-              Com 308 lojas, a <b>Restoque detém as marcas</b> de roupas e
-              acessórios de luxo
-              <b>Le Lis Blanc, Dudalina, John John, Rosa Chá, Bo.Bô,    Individual e Base.</b
-              >
-              Construímos um Mobile Commerce focado em experiência de compra
-              com funções personalizadas de acordo com a interação do cliente.
-              Algo além do fluxo óbvio (escolha de produtos e pagamento).
-            </p>
-          </div>
-          <div class="card-img">
-            <img
-              src="../assets/sobre/cases_logos/Case-Le-Lis-Blanc.png"
-              alt="Case Le Lis"
-            />
-          </div>
-          <div class="card-testimonial">
-            <p>
-              <span>"</span>Buscamos uma empresa que nos ajudasse a
-              transformar nossa realidade. Não queríamos uma relação
-              contratual, mas sim uma <b>relação de confiança</b> e de valores
-              não financeiros.
-              <b>Não tenho a menor dúvida de que eu indicaria.</b
-              ><span>"</span>
-            </p>
-            <div class="testimonial-person">
-              <img
-                src="../assets/sobre/cases_logos/Carolina-Strobel.png"
-                alt="Caroline Strobel"
-              />
+      <div class="container-planos">
+        <!-- diferenciais -->
+        <section class="container-dif">
+          <div class="dif-header">
+            <div class="dif-title">
+              <small class="text-small">CONHEÇA</small>
+              <h1 class="text-h1">Nossos diferenciais</h1>
+            </div>
+            <div class="dif-menu">
               <div>
-                <p>Carolina Strobel</p>
-                <small>Diretora de Inovação</small>
+                <btn
+                  id="menu1"
+                  class="dif-link"
+                  onmouseover="mouseOver(1)"
+                  onmouseout="mouseOut(1)"
+                  onclick="mouseClick(1)"
+                  href=""
+                  >Emissão no painel</btn
+                >
+                <btn
+                  id="menu2"
+                  class="dif-link"
+                  onmouseover="mouseOver(2)"
+                  onmouseout="mouseOut(2)"
+                  onclick="mouseClick(2)"
+                  href="#"
+                  >API de fácil integração</btn
+                >
+                <btn
+                  id="menu3"
+                  class="dif-link"
+                  onmouseover="mouseOver(3)"
+                  onmouseout="mouseOut(3)"
+                  onclick="mouseClick(3)"
+                  href=""
+                  >Emissão na Loja Virtual</btn
+                >
               </div>
             </div>
           </div>
-          <div class="card-description">
-            <p>
-              Este novo canal na jornada omnichannel da Le Lis Blanc permite
-              contato com os produtos, mas também com os conteúdos da marca.
-              Algo alinhado ao perfil exigente dos consumidores.
-            </p>
-          </div>
-        </div>
-        <div class="posts">
-          <div class="card-title">
-            <img
-              src="../assets/sobre/cases_logos/LOGO-MTRIX.svg"
-              alt="Mtrix"
-            />
-            <h1>Apps integrados à SaaS líder de mercado:</h1>
-            <p><b>dados estratégicos para c-levels do varejo.</b>
-              <br> 
-              Criamos apps nativas Android e iOS integradas aos softwares da Mtrix. O SaaS da companhia foi estendido para o contexto mobile visando atender um novo perfil de usuário decisor e isso aumentou o valor percebido das soluções da empresa.
-            </p>
-          </div>
-          <div class="card-img">
-            <img
-              src="../assets/sobre/cases_logos/Mtrix-2.png"
-              alt="Case Le Lis"
-            />
-          </div>
-          <div class="card-testimonial">
-            <p>
-              <span>"</span>Eu estava com uma expectativa muito alta do que a gente iria conseguir fazer em uma semana, e <b>não só alcançamos, como superamos essa expectativa.</b
-              ><span>"</span>
-            </p>
-            <div class="testimonial-person">
+          <div id="dif-painel" class="dif-main">
+            <div class="dif-img">
               <img
-                src="../assets/sobre/cases_logos/Maria-Cabral1.png"
-                alt="Caroline Strobel"
+                src="../assets/planos/painel-products.svg"
+                alt="imagem da loja"
+                title="EMISSÃO NO PAINEL"
               />
+            </div>
+            <div class="dif-description">
+              <small class="text-small">EMISSÃO NO PAINEL</small>
+              <h2>Emissão no Painel WebmaniaBR®</h2>
+              <p>
+                Emita as suas notas fiscais de Entrada, Saída, Importação e
+                Exportação no Painel WebmaniaBR®. Em poucos cliques informe os
+                dados do cliente, produtos e as características da nota fiscal.
+                Aliás, o cálculo dos impostos é automático.
+              </p>
               <div>
-                <p>Maria Cabral</p>
-                <small>Presidente - Mtrix</small>
+                <a href="/">COMEÇAR AGORA</a>
               </div>
             </div>
           </div>
-          <div class="card-description">
+          <div id="dif-integracao" class="dif-main">
+            <div class="dif-img">
+              <img
+                src="../assets/planos/integracao_api.svg"
+                alt="imagem da loja"
+                title="EMISSÃO NO PAINEL"
+              />
+            </div>
+            <div class="dif-description">
+              <small class="text-small">API DE FÁCIL INTEGRAÇÃO</small>
+              <h2>Emissão via API WebmaniaBR®</h2>
+              <p>
+                Utilize a REST API da WebmaniaBR® para realizar integração na
+                sua Loja Virtual, ERP e Sistemas Financeiros para emissão de
+                Nota Fiscal Eletrônica (NF-e) e Nota Fiscal do Consumidor
+                Eletrônica (NFC-e).
+              </p>
+              <div>
+                <a href="/">VISUALIZAR DOCUMENTAÇÃO</a>
+              </div>
+            </div>
+          </div>
+          <div id="dif-loja" class="dif-main">
+            <div class="dif-img">
+              <img
+                src="../assets/planos/loja.svg"
+                alt="imagem da loja"
+                title="EMISSÃO NO PAINEL"
+              />
+            </div>
+            <div class="dif-description">
+              <small class="text-small">EMISSÃO NA LOJA VIRTUAL</small>
+              <h2>Emissão via Plugin de Lojas Virtuais</h2>
+              <p>
+                Instale o módulo grátis na sua loja virtual WooCommerce ,
+                Magento , OpenCart e PrestaShop ou solicite para o seu
+                programador realizar a fácil integração através de nossa API
+                estável e segura.
+              </p>
+              <div>
+                <a href="/">CONECTAR</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- planos -->
+        <section class="container-planos">
+          <div class="planos-title">
+            <small class="text-small">PLANOS</small>
+            <h1 class="text-h1">Conheça nossos preços</h1>
             <p>
-              Aproveitamos a inteligência de dados acumulada pela empresa em suas outras plataformas para acelerar a entrega dos projetos mobile.
+              Planos para todas as modalidades de empresa, com preços que cabem
+              no seu bolso! Descubra o melhor plano para você! Para mais de
+              10.000 emissões, clique aqui e fale com a nossa equipe comercial.
             </p>
           </div>
-        </div>
-      </section>
-      <section class="container-contact">
-        <h1>
-          Sua parceira para <br>
-          <b>desenvolvimento de software sob medida</b>
-        </h1>
-        <button>
-          <a href="../contato/index.html">Entre em contato</a>
-        </button>
-      </section>
-        </div>
-      
-  
+          <div class="planos-row">
+            <div class="planos">
+              <p>100 EMISSÕES</p>
+              <p>Desconto de 10%</p>
+              <p>R$ 32,90<small>/mês</small></p>
+              <small class="text-secondary">equivalente a R$394,76/ano</small>
+              <ul>
+                <li>01 CNPJ por plano</li>
+                <li>100 notas fiscais/mês</li>
+                <li>Armazenamento ilimitado</li>
+                <li>R$ 0,24 por nota excedente</li>
+                <li>Compatível com Certificado Digital A1</li>
+              </ul>
+              <div>
+                <button>TESTE 30 DIAS GRÁTIS</button>
+              </div>
+            </div>
+            <div class="planos">
+              <p>200 EMISSÕES</p>
+              <p>Desconto de 10%</p>
+              <p>R$ 32,90<small>/mês</small></p>
+              <small class="text-secondary">equivalente a R$394,76/ano</small>
+              <ul>
+                <li>01 CNPJ por plano</li>
+                <li>100 notas fiscais/mês</li>
+                <li>Armazenamento ilimitado</li>
+                <li>R$ 0,24 por nota excedente</li>
+                <li>Compatível com Certificado Digital A1</li>
+              </ul>
+              <div>
+                <button>TESTE 30 DIAS GRÁTIS</button>
+              </div>
+            </div>
+            <div class="planos">
+              <p>300 EMISSÕES</p>
+              <p>Desconto de 10%</p>
+              <p>R$ 32,90<small>/mês</small></p>
+              <small class="text-secondary">equivalente a R$394,76/ano</small>
+              <ul>
+                <li>01 CNPJ por plano</li>
+                <li>100 notas fiscais/mês</li>
+                <li>Armazenamento ilimitado</li>
+                <li>R$ 0,24 por nota excedente</li>
+                <li>Compatível com Certificado Digital A1</li>
+              </ul>
+              <div>
+                <button>TESTE 30 DIAS GRÁTIS</button>
+              </div>
+            </div>
+          </div>
+          <div class="planos-rodape">
+            <p class="text-secondary">
+              ATENÇÃO: TESTE GRÁTIS VÁLIDO SOMENTE PARA CONTRATAÇÃO DO PLANO VIA
+              CARTÃO DE CRÉDITO
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -469,6 +479,7 @@
   </body>
   <!-- locais -->
   <script src="../scripts/script.js"></script>
+  <script src="../scripts/planos.js"></script>
   <!-- bootstrap -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
