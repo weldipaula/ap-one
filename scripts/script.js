@@ -47,10 +47,17 @@ window.addEventListener('resize', handleHeader)
 function handleHeader() {
   const headerImg = document.querySelector('.header-full-image')
   if (window.innerWidth < 1006) {
-    headerImg.setAttribute('src', '../assets/bg-1000.jpg')
-    console.log(headerImg)
+    if (headerImg.id === 'home') {
+      headerImg.setAttribute('src', './assets/bg-1000.jpg')
+    } else {
+      headerImg.setAttribute('src', '../assets/bg-1000.jpg')
+    }
   } else if (window.innerWidth > 1006) {
-    headerImg.setAttribute('src', '../assets/bg.jpg')
+    if (headerImg.id === 'home') {
+      headerImg.setAttribute('src', './assets/bg.jpg')
+    } else {
+      headerImg.setAttribute('src', '../assets/bg.jpg')
+    }
   }
 }
 
