@@ -55,7 +55,6 @@ function handleHeader() {
 }
 
 function start() {
-  alert(window.innerWidth)
   handleHeader()
   addDots()
   setInterval(() => {

@@ -297,7 +297,6 @@
   .cards {
     width: 300px;
     min-height: 350px;
-    background-color: blue;
   }
   .card-text .btn-link {
     bottom: 0.5rem;
