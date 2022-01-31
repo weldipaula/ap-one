@@ -103,14 +103,21 @@ h2 {
 .dif-img {
   width: 55%;
   object-fit: cover;
+  display: flex;
+  justify-content: center;
 }
 .dif-img img {
-  width: 100%;
+  width: 85%;
+  box-shadow: 0 0 10px 0 black;
+  border-radius: 1rem;
 }
 .dif-description {
   width: 45%;
   min-width: 35vw;
   line-height: 1.5rem;
+}
+.dif-description h2 {
+  margin-top: 1rem;
 }
 .dif-description p {
   margin: 2rem 0 4rem 0;
@@ -131,6 +138,9 @@ h2 {
 }
 
 /* area dos planos */
+.container-planos {
+  margin-top: 3rem;
+}
 .planos-title {
   display: flex;
   flex-direction: column;
@@ -193,6 +203,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 1rem;
 }
 .planos ul li {
   margin: 0 0 1rem -1.5rem;
@@ -231,7 +242,7 @@ h2 {
   justify-content: center;
 }
 .planos-rodape .text-secondary {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--primary-green);
 }
 
